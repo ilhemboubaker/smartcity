@@ -1,0 +1,22 @@
+<div>
+  <h2>Soumission de Réclamation</h2>
+  <form (ngSubmit)="onSubmit()">
+    <label for="category">Catégorie :</label>
+    <input type="text" id="category" [(ngModel)]="claimCategory" required>
+
+    <label for="description">Description :</label>
+    <textarea id="description" [(ngModel)]="claimDescription" required></textarea>
+
+    <label for="location">Localisation :</label>
+    <input type="text" id="location" [(ngModel)]="claimLocation" required>
+
+    <label for="priority">Priorité :</label>
+    <select id="priority" [(ngModel)]="claimPriority" required>
+      <option value="low">Faible</option>
+      <option value="medium">Moyenne</option>
+      <option value="high">Haute</option>
+    </select>
+
+    <button type="submit">Soumettre</button>
+  </form>
+</div>

@@ -1,0 +1,22 @@
+<div>
+  <h2>Tableau de Bord Administrateur</h2>
+
+  <div>
+    <h3>Réclamations par Secteur</h3>
+    <ul>
+      <!-- Boucle sur les données de réclamation par secteur -->
+      <li *ngFor="let item of claimCountBySector">
+        {{ item.sector }} : {{ item.count }}
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h3>Réclamations par Catégorie</h3>
+    <ul>
+      <!-- Boucle sur les données de réclamation par catégorie -->
+      <li *ngFor="let item of claimCountByCategory">
+        {{ item.category }} : {{ item.count }}
+      </li>
+    </ul>
+  </div>
